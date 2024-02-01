@@ -165,6 +165,64 @@ main {
 
 .bullet-points ul li {
     margin-bottom: 10px;
-    color: hsl(25, 76%, 31%);
+    color: #8b4513;
     font-size: 20px;
+}
+
+.page-break hr {
+    border: none; /* Remove the default border */
+    height: 200px; /* Set the height of the bar (thicker) */
+    background-color: #8B4513; /* Set the color of the bar (wood-color) */
+    width: 100vw; /* Make the bar fill horizontally across the viewport */
+    margin: 20px 0; /* Add some vertical margin for spacing */
+    position: relative; /* Position the pseudo-element relative to the bar */
+}
+
+.page-break hr::after {
+    content: "Our Package"; /* Add text content */
+    position: absolute; /* Position the text absolutely within the bar */
+    top: 50%; /* Align the text vertically at the center */
+    left: 50%; /* Align the text horizontally at the center */
+    transform: translate(-50%, -50%); /* Adjust the text position to center it */
+    color: white; /* Set the text color */
+    font-size: 18px; /* Set the font size of the text */
+}
+
+.package-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2x2 layout */
+    gap: 20px; /* Add gap between packages */
+}
+
+.package {
+    border: 1px solid #ccc; /* Add border to create box shape */
+    padding: 20px; /* Add padding inside the box */
+}
+
+.package h3 {
+    margin-top: 0; /* Remove default margin for heading */
+}
+
+.package button {
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.package button:hover {
+    background-color: #498b13;
+}
+
+.package-options h2 {
+    grid-column: 1 / -1; /* span across all columns */
+    margin-top: 0; /* Remove default margin for heading */
+}
+
+.package-contact button {
+    background-color: red; /* Change button color to red */
+    padding: 15px 30px; /* Increase button padding for a larger size */
+    font-size: 16px; /* Increase font size */
 }

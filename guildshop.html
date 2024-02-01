@@ -11,13 +11,14 @@
         <h1 class="web-name">Valiis Guildshop</h1>
         <nav class="nav-right">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#package">About</a></li>
+                <li><a href="#bottom">Contact</a></li>
             </ul>
         </nav>
     </header>
 
+    <section id="top"></section>
     <main class="main.content">
         <h1 class="center">Best Rated Magic Item in Faerun</h1>
         <h2 class="center">Trivialize dungeon lurking</h2>
@@ -39,7 +40,7 @@
 
                         <label for="class">Your class:</label>
                         <select id="class" name="your class">
-                            <option value="Your Class">Your Class</option>
+                            <option value="none">none</option>
                             <option value="Barbaria">Barbarian</option>
                             <option value="Bard">Bard</option>
                             <option value="Cleric">Cleric</option>
@@ -56,7 +57,7 @@
 
                         <label for="interest">Interest:</label>
                         <select id="interest" name="interest">
-                            <option value="Your Interest">Your Interest</option>
+                            <option value="none">none</option>
                             <option value="Magic Equipment">Magic Equipment</option>
                             <option value="Magic Weapon">Magic Weapon</option>
                             <option value="Magic Armor">Magic Armor</option>
@@ -70,7 +71,7 @@
 
         <div class="comment-box">
             <div class="comment-avatar">
-                <img src="images/Mike_Cox_Long.jpg" alt="Mike C. Long">
+                <img src="images/Mike.png" alt="Mike C. Long">
             </div>
             <div class="comment-content">
                 <h3>"Adventuring never been so easy."</h3>
@@ -88,8 +89,52 @@
             <li>Fly in the sky with style!</li>
         </ul>
     </div>
-    </main>
 
-    <script src="scripts.js"></script>
+    <div id="package" class="page-section">
+    </div>
+
+    <div class="page-break">
+        <hr>
+    </div>
+
+    <div class="package-options">
+        <h2>Pick Your Package!</h2>
+
+        <div class="package">
+            <h3>Survival Pack</h3>
+            <p>Potion of healing, Cloack of Warding, or Amulet of Protection, staying alive is your priority.</p>
+            <button>Select</button>
+        </div>
+
+        <div class="package">
+            <h3>Destruction</h3>
+            <p>Ashbomb of Nanook, Orb of Voldie, or AK-37, some people just want to watch the world burn. </p>
+            <button>Select</button>
+        </div>
+
+        <div class="package">
+            <h3>Curses</h3>
+            <p>Eyes and hand of Vecna, Curse Cloth of Pocong, your enemy don't want to be your enemy.</p>
+            <button>Select</button>
+        </div>
+
+        <div class="package">
+            <h3>Adventure</h3>
+            <p>Winged boots, Cloak of invisibilty, or glasses of truth, see the wonderful world by yourself!</p>
+            <button>Select</button>
+        </div>
+    </div>
+
+    <h2>Unleash Your Potential with Our Magical Emporium</h2>
+    <h3>Do not waste your potential, with our magical item at your arsenal you can do anything your heart desire, for the right price.</h3>
+    <div class="package package-contact">
+        <button>Order Now
+        </button>
+    </div>
+    
+    <div id="bottom" class="page-section">
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
